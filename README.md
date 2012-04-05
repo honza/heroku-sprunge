@@ -36,6 +36,11 @@ Set these with:
 
     $ heroku config:add KEY=VALUE
 
+Hacking
+-------
+
+Modify the `run.sh` file with your settings and use it to run the app locally.
+
 Example
 -------
 
