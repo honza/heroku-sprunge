@@ -35,6 +35,13 @@ Set these with:
 
     $ heroku config:add KEY=VALUE
 
+Example
+-------
+
+Here is an example of the app running on Heroku:
+
+http://quiet-sky-4922.herokuapp.com/
+
 License
 -------
 
