@@ -13,28 +13,12 @@ free.  All you need is a free Heroku account and a bit of time.
 Setup
 -----
 
+Make sure you've got Heroku's command line utility installed and configured
+first.
+
     $ git clone git://github.com/honza/heroku-sprunge.git
     $ cd heroku-sprunge
-    $ heroku create --stack cedar
-    $ heroku addons:add mongolab:starter
-    $ # Add settings: heroku config:add 
-    $ git push heroku master
-
-Env settings
-------------
-
-* `SPRUNGE_HOST` - the url where this will be hosted (no trailing slash)
-* `SPRUNGE_NAME` - the POST payload key
-* `SPRUNGE_MONGO_URI` - the MongoLab URL from Heroku (`heroku config | grep
-  mongo`)
-* `SPRUNGE_MONGO_DB_NAME` - the string after the last slash on
-  `SPRUNGE_MONGO_URI`
-* `SPRUNGE_STYLE` - Pygments style (defaults to `default`)
-
-
-Set these with:
-
-    $ heroku config:add KEY=VALUE
+    $ ./bootstrap.sh
 
 Hacking
 -------
