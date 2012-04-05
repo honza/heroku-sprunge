@@ -13,5 +13,5 @@ def get_value(key):
 
 HOST = get_value('HOST')
 NAME = get_value('NAME')  # the POST payload key
-MONGO_URI = get_value('MONGOLAB_URI')
+MONGO_URI = get_value('MONGO_URI')
 MONGO_DB_NAME = get_value('MONGO_DB_NAME')

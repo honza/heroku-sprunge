@@ -7,6 +7,7 @@ from pygments.formatters import HtmlFormatter
 from flask import Flask, request, make_response
 from db import insert, find
 from bson.errors import InvalidId
+from settings import *
 
 app = Flask(__name__)
 
