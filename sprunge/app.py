@@ -72,7 +72,7 @@ def snip(uid):
         except:
             lexer = pygments.lexers.TextLexer()
         formatter = HtmlFormatter(full=True,
-                style='borland', lineanchors='n', linenos='inline',
+                style=STYLE, linenos='inline',
                 encoding='utf-8')
         return highlight(data['content'], lexer, formatter)
     else:

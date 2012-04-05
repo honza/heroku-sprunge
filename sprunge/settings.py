@@ -15,3 +15,8 @@ HOST = get_value('HOST')
 NAME = get_value('NAME')  # the POST payload key
 MONGO_URI = get_value('MONGO_URI')
 MONGO_DB_NAME = get_value('MONGO_DB_NAME')
+
+try:
+    STYLE = os.environ['SPRUNGE_STYLE']
+except:
+    STYLE = 'default'

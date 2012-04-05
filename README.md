@@ -29,6 +29,7 @@ Env settings
   mongo`)
 * `SPRUNGE_MONGO_DB_NAME` - the string after the last slash on
   `SPRUNGE_MONGO_URI`
+* `SPRUNGE_STYLE` - Pygments style (defaults to `default`)
 
 
 Set these with:
