@@ -15,10 +15,10 @@ app = Flask(__name__)
 HOME = """
 <style> a { text-decoration: none } </style>
 <pre>
-sprunge(1)                          SPRUNGE                          sprunge(1)
+heroku-sprunge(1)               HEROKU-SPRUNGE                heroku-sprunge(1)
 
 NAME
-    sprunge: command line pastebin:
+    heroku-sprunge: command line pastebin:
 
 SYNOPSIS
     &lt;command&gt; | curl -F '%s=&lt;-' %s
@@ -27,12 +27,12 @@ DESCRIPTION
     add <a href='http://pygments.org/docs/lexers/'>?&lt;lang&gt;</a> to resulting url for line numbers and syntax highlighting
 
 EXAMPLES
-    ~$ cat bin/ching | curl -F '%s=&lt;-' %s
+    $ cat some/file.txt | curl -F '%s=&lt;-' %s
        %s/VZiY
-    ~$ firefox %s/VZiY?py#n-7
+    $ firefox %s/VZiY?py#n-7
 
 SEE ALSO
-    http://github.com/rupa/sprunge
+    https://github.com/honza/heroku-sprunge
 
 </pre>"""
 
